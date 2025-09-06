@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Psicología del Aprendizaje – Cómputo 1</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #0b2540; background: #f6fbff; }
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER / NAV */
+    header { position: sticky; top: 0; z-index: 100; background: linear-gradient(180deg, #06223d, #0a3c5f); padding: 20px 0; }
+    .nav-inner { max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; }
+    .logo { display: flex; align-items: center; }
+    .logo img { height: 60px; margin-right: 15px; }
+    .logo h1 { font-size: 24px; font-weight: 800; color: white; }
+    nav ul { list-style: none; display: flex; gap: 16px; }
+    nav a { color: white; font-weight: 600; padding: 8px; transition: opacity 0.3s; }
+    nav a:hover { opacity: 0.8; }
+    .cta-buttons { display: flex; gap: 10px; }
+    .btn, .btn-ghost { border-radius: 8px; font-weight: 700; padding: 8px 14px; font-size: 14px; }
+    .btn { background: #ff7a59; color: white; }
+    .btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,0.3); color: white; }
+
+    /* HERO */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+      color: white; text-align: center; padding: 120px 20px; position: relative;
+    }
+    .hero::after { content: ""; position: absolute; inset: 0; background: rgba(2,18,34,0.65); }
+    .hero .content { position: relative; z-index: 1; max-width: 800px; margin: auto; }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 24px; }
+
+    /* SECTIONS */
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    .bloque { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; margin-bottom: 60px; }
+    .bloque.alt { grid-template-columns: 1fr 1fr; direction: rtl; }
+    .bloque.alt .texto { direction: ltr; }
+    .bloque img { width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(6,30,60,0.08); }
+    .texto h2 { font-size: 2rem; color: #0a3c5f; margin-bottom: 16px; }
+    .texto p { font-size: 1rem; line-height: 1.5; }
+    .texto a { display: inline-block; margin-top: 12px; font-weight: bold; color: #ff7a59; }
+
+    /* SABÍAS QUE */
+    .datos { display: flex; gap: 20px; flex-wrap: wrap; }
+    .dato { background: white; padding: 20px; border-radius: 12px; flex: 1; box-shadow: 0 4px 15px rgba(6,30,60,0.05); margin-bottom: 20px; }
+    .dato h3 { margin-bottom: 10px; color: #06223d; }
+
+    /* CTA BANNER */
+    .cta-banner {
+      background: linear-gradient(90deg,#073b61,#006c9a);
+      color: white; padding: 40px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;
+    }
+    .cta-banner h3 { font-size: 1.8rem; margin-bottom: 10px; }
+    .cta-banner .actions { display: flex; gap: 10px; }
+
+    /* GALERÍA */
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); gap: 10px; margin-top: 20px; }
+    .gallery img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; }
+
+    /* REFLEXIÓN */
+    .reflexion { background: #eaf6ff; padding: 40px; border-radius: 12px; text-align: center; }
+    .reflexion h2 { font-size: 2rem; margin-bottom: 16px; color: #0a3c5f; }
+
+    /* FOOTER */
+    footer { background: #042637; color: #cfeaf6; padding: 30px 20px; text-align: center; }
+    footer small { display: block; margin-top: 12px; font-size: 0.9rem; color: #9ed6e9; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="https://talentohumano.ugb.edu.sv/Assets/img/logos/logo_blanco_vertical.png" alt="Logo UGB">
+        <h1>Psicología del Aprendizaje</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="semana1.html">Semana 1</a></li>
+          <li><a href="semana2.html">Semana 2</a></li>
+          <li><a href="semana3.html">Semana 3</a></li>
+          <li><a href="semana4.html">Semana 4 y 5</a></li>
+        </ul>
+      </nav>
+      <div class="cta-buttons">
+        <a href="#reflexion" class="btn">Reflexión</a>
+        <a href="#galeria" class="btn-ghost">Galería</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="content">
+      <h1>Psicología del Aprendizaje</h1>
+      <p>Explorando los contenidos del Cómputo 1: teorías, precursores y reflexiones.</p>
+    </div>
+  </section>
+
+  <!-- RESUMEN DE SEMANAS -->
+  <section>
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998" alt="Semana 1">
+      <div class="texto">
+        <h2>Semana 1: ¿Qué es la Psicología del Aprendizaje?</h2>
+        <p>Definiciones, métodos, concepto de aprendizaje y tipos principales.</p>
+        <a href="semana1.html">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Semana 2">
+      <div class="texto">
+        <h2>Semana 2: Desarrollo Histórico</h2>
+        <p>Filosofía, teorías clásicas y objetivos de la Psicología del Aprendizaje.</p>
+        <a href="semana2.html">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Semana 3">
+      <div class="texto">
+        <h2>Semana 3: Objeto de Estudio</h2>
+        <p>Objeto de estudio, relación con otras disciplinas y propósitos sociales.</p>
+        <a href="semana3.html">Ver más →</a>
+      </div>
+    </div>
+
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126" alt="Semana 4 y 5">
+      <div class="texto">
+        <h2>Semana 4-5: Precursores</h2>
+        <p>Principales autores de los siglos XIX, XX y XXI en Psicología del Aprendizaje.</p>
+        <a href="semana4.html">Ver más →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria">
+    <h2 style="text-align:center; margin-bottom:20px; color:#0a3c5f;">Galería de la Asignatura</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1581091870629-3b9c5fbbb862" alt="Ejemplo 1">
+      <img src="https://images.unsplash.com/photo-1564869735405-bef237979172" alt="Ejemplo 2">
+      <img src="https://images.unsplash.com/photo-1603297636691-f0bde9447e3e" alt="Ejemplo 3">
+      <img src="https://images.unsplash.com/photo-1554774853-b0ef885f0d46" alt="Ejemplo 4">
+    </div>
+  </section>
+
+  <!-- REFLEXIÓN -->
+  <section id="reflexion" class="reflexion">
+    <h2>Reflexión Final</h2>
+    <p>Durante el cómputo 1 comprendí los fundamentos de la Psicología del Aprendizaje, sus teorías, precursores y aplicaciones en la educación. Estos aprendizajes me permiten valorar la importancia de comprender cómo las personas adquieren, procesan y aplican conocimientos.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Hecho por Cesia Damaris Barrera Díaz</p>
+    <small>Facultad de Ciencias y Humanidades | Asignatura: Psicología del Aprendizaje – Cómputo 1</small>
+  </footer>
+
+</body>
+</html>
 
