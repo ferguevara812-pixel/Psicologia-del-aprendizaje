@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semana 3 - Objeto de estudio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f6fbff; color: #0b2540; }
+    a { text-decoration: none; color: inherit; }
+
+    header { background: linear-gradient(180deg, #06223d, #0a3c5f); padding: 20px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; }
+    .logo img { height: 60px; margin-right: 15px; }
+    .logo h1 { color: white; font-size: 24px; font-weight: 800; }
+    nav ul { display: flex; list-style: none; gap: 16px; }
+    nav a { color: white; font-weight: 600; padding: 8px; }
+    nav a:hover { opacity: 0.8; }
+
+    .hero { background: url('https://images.unsplash.com/photo-1581093454983-3e426eb1f885') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; position: relative; }
+    .hero::after { content: ""; position: absolute; inset: 0; background: rgba(2,18,34,0.6); }
+    .hero .content { position: relative; z-index: 1; max-width: 800px; margin: auto; }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; opacity: 0.9; }
+
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .bloque { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; margin-bottom: 60px; }
+    .bloque.alt { grid-template-columns: 1fr 1fr; direction: rtl; }
+    .bloque.alt .texto { direction: ltr; }
+    .bloque img { width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(6,30,60,0.08); }
+    .texto h2 { font-size: 2rem; color: #0a3c5f; margin-bottom: 16px; }
+    .texto p { font-size: 1rem; line-height: 1.5; margin-bottom: 10px; }
+    .lista { margin-left: 20px; margin-bottom: 20px; }
+    .lista li { margin-bottom: 8px; }
+
+    .reflexion { background: #eaf6ff; padding: 40px; border-radius: 12px; text-align: center; margin-top: 40px; }
+    .reflexion h2 { font-size: 2rem; margin-bottom: 16px; color: #0a3c5f; }
+    .reflexion p { font-size: 1rem; line-height: 1.6; }
+
+    footer { background: #042637; color: #cfeaf6; text-align: center; padding: 30px 20px; }
+    footer small { display: block; margin-top: 12px; font-size: 0.9rem; color: #9ed6e9; }
+
+    .lista li::before { content: "🔥 "; color: #ff7a59; font-weight: bold; margin-right: 5px; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="https://talentohumano.ugb.edu.sv/Assets/img/logos/logo_blanco_vertical.png" alt="Logo UGB">
+      <h1>Psicología del Aprendizaje</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="semana1.html">Semana 1</a></li>
+        <li><a href="semana2.html">Semana 2</a></li>
+        <li><a href="semana4.html">Semana 4 y 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="content">
+      <h1>Semana 3: Objeto de estudio de la Psicología del Aprendizaje</h1>
+      <p>Analizamos el objeto de estudio, su relación con otras disciplinas y su relevancia actual.</p>
+    </div>
+  </section>
+
+  <!-- BLOQUES DE CONTENIDO -->
+  <section>
+
+    <!-- Bloque 1: Objeto de estudio -->
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Objeto de estudio">
+      <div class="texto">
+        <h2>Objeto de estudio</h2>
+        <p>La Psicología del Aprendizaje estudia los procesos mediante los cuales los individuos adquieren conocimientos, habilidades, valores y actitudes. Analiza cómo se desarrollan estos procesos a lo largo del tiempo y cómo factores internos y externos los afectan.</p>
+        <p>Se enfoca tanto en el aprendizaje consciente como en el inconsciente, en contextos educativos, laborales y sociales.</p>
+      </div>
+    </div>
+
+    <!-- Bloque 2: Relación con otras disciplinas -->
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1596496055556-3a04e1aa0ef4" alt="Relaciones interdisciplinarias">
+      <div class="texto">
+        <h2>Relación con otras disciplinas</h2>
+        <ul class="lista">
+          <li>Psicología y Educación: diseño de estrategias pedagógicas efectivas.</li>
+          <li>Psicología y Terapia de Conducta: modificación de hábitos y conductas.</li>
+          <li>Psicología y Neurociencia: comprensión de la base cerebral del aprendizaje.</li>
+          <li>Psicología y Tecnología: desarrollo de herramientas digitales educativas.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bloque 3: Propósitos en la sociedad actual -->
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1554774853-b0ef885f0d46" alt="Propósitos actuales">
+      <div class="texto">
+        <h2>Propósitos de la Psicología del Aprendizaje en la sociedad actual</h2>
+        <ul class="lista">
+          <li>Comprender los procesos de aprendizaje para mejorar la educación.</li>
+          <li>Desarrollar técnicas innovadoras para facilitar la adquisición de conocimientos.</li>
+          <li>Contribuir a la educación especial y la inclusión de estudiantes con necesidades diversas.</li>
+          <li>Identificar barreras del aprendizaje y diseñar estrategias para superarlas.</li>
+          <li>Optimizar la motivación y el desempeño en diferentes contextos.</li>
+        </ul>
+        <p>Estos propósitos permiten aplicar la Psicología del Aprendizaje en escuelas, empresas y programas de desarrollo personal, impactando directamente en la calidad del aprendizaje y la educación.</p>
+      </div>
+    </div>
+
+    <!-- Bloque 4: Ejemplo interactivo creativo -->
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Actividad interactiva">
+      <div class="texto">
+        <h2>Actividad Interactiva</h2>
+        <p>Para reforzar el aprendizaje de esta semana, propongo un ejercicio interactivo:</p>
+        <ul class="lista">
+          <li>Selecciona un proceso de aprendizaje que hayas experimentado recientemente.</li>
+          <li>Identifica qué teoría o enfoque se relaciona con tu experiencia.</li>
+          <li>Reflexiona sobre cómo podrías mejorar este proceso aplicando estrategias aprendidas en esta semana.</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- REFLEXIÓN SEMANA 3 -->
+  <section class="reflexion">
+    <h2>Reflexión Semana 3</h2>
+    <p>En esta semana comprendí que el objeto de estudio de la Psicología del Aprendizaje no se limita al aula, sino que tiene aplicaciones en la vida cotidiana y profesional. 
+    La interacción con otras disciplinas potencia la comprensión de cómo aprendemos y cómo podemos optimizar procesos educativos y conductuales. Esta visión interdisciplinaria me permitirá aplicar estrategias más efectivas en diversos contextos de aprendizaje.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Hecho por Cesia Damaris Barrera Díaz</p>
+    <small>Facultad de Ciencias y Humanidades | Asignatura: Psicología del Aprendizaje – Cómputo 1</small>
+  </footer>
+
+</body>
+</html>

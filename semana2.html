@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semana 2 - Desarrollo Histórico</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f6fbff; color: #0b2540; }
+    a { text-decoration: none; color: inherit; }
+
+    header { background: linear-gradient(180deg, #06223d, #0a3c5f); padding: 20px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; }
+    .logo img { height: 60px; margin-right: 15px; }
+    .logo h1 { color: white; font-size: 24px; font-weight: 800; }
+    nav ul { display: flex; list-style: none; gap: 16px; }
+    nav a { color: white; font-weight: 600; padding: 8px; }
+    nav a:hover { opacity: 0.8; }
+
+    .hero { background: url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; position: relative; }
+    .hero::after { content: ""; position: absolute; inset: 0; background: rgba(2,18,34,0.6); }
+    .hero .content { position: relative; z-index: 1; max-width: 800px; margin: auto; }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; opacity: 0.9; }
+
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .bloque { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; margin-bottom: 60px; }
+    .bloque.alt { grid-template-columns: 1fr 1fr; direction: rtl; }
+    .bloque.alt .texto { direction: ltr; }
+    .bloque img { width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(6,30,60,0.08); }
+    .texto h2 { font-size: 2rem; color: #0a3c5f; margin-bottom: 16px; }
+    .texto p { font-size: 1rem; line-height: 1.5; margin-bottom: 10px; }
+    .lista { margin-left: 20px; margin-bottom: 20px; }
+    .lista li { margin-bottom: 8px; }
+
+    .reflexion { background: #eaf6ff; padding: 40px; border-radius: 12px; text-align: center; margin-top: 40px; }
+    .reflexion h2 { font-size: 2rem; margin-bottom: 16px; color: #0a3c5f; }
+    .reflexion p { font-size: 1rem; line-height: 1.6; }
+
+    footer { background: #042637; color: #cfeaf6; text-align: center; padding: 30px 20px; }
+    footer small { display: block; margin-top: 12px; font-size: 0.9rem; color: #9ed6e9; }
+
+    .lista li::before { content: "• "; color: #ff7a59; font-weight: bold; margin-right: 5px; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="https://talentohumano.ugb.edu.sv/Assets/img/logos/logo_blanco_vertical.png" alt="Logo UGB">
+      <h1>Psicología del Aprendizaje</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="semana1.html">Semana 1</a></li>
+        <li><a href="semana3.html">Semana 3</a></li>
+        <li><a href="semana4.html">Semana 4 y 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="content">
+      <h1>Semana 2: Desarrollo Histórico de la Psicología del Aprendizaje</h1>
+      <p>Exploramos el origen filosófico, teorías psicológicas y objetivos fundamentales de esta disciplina.</p>
+    </div>
+  </section>
+
+  <!-- BLOQUES DE CONTENIDO -->
+  <section>
+
+    <!-- Bloque 1: Planteamiento filosófico -->
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1554774853-b0ef885f0d46" alt="Filosofía">
+      <div class="texto">
+        <h2>Planteamiento Filosófico del Aprendizaje</h2>
+        <p>Filósofos como Aristóteles y Platón reflexionaron sobre cómo los seres humanos adquieren conocimiento, sentando las bases para la psicología científica. Consideraban que el aprendizaje es resultado de la experiencia, la observación y la razón.</p>
+        <p>Estos planteamientos influyeron en la educación y en la investigación psicológica posterior, enfatizando la importancia de comprender los procesos internos de la mente y la conducta.</p>
+      </div>
+    </div>
+
+    <!-- Bloque 2: Teoría Conductual -->
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Conductual">
+      <div class="texto">
+        <h2>Teoría del Aprendizaje Conductual</h2>
+        <p>Esta teoría sostiene que el aprendizaje se produce mediante estímulos y respuestas, reforzadas por recompensas o castigos.</p>
+        <ul class="lista">
+          <li>Autor destacado: B.F. Skinner</li>
+          <li>Se centra en la observación de conductas externas y medibles</li>
+          <li>Aplicaciones: técnicas de modificación de conducta, educación y terapia conductual</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bloque 3: Aprendizaje por Descubrimiento -->
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Descubrimiento">
+      <div class="texto">
+        <h2>Teoría del Aprendizaje por Descubrimiento</h2>
+        <p>Propuesta por Jerome Brunner, esta teoría plantea que los estudiantes aprenden mejor cuando descubren conceptos por sí mismos, a través de la exploración y la resolución de problemas.</p>
+        <ul class="lista">
+          <li>Favorece la autonomía y pensamiento crítico</li>
+          <li>Promueve la creatividad y la curiosidad</li>
+          <li>Se aplica en actividades de laboratorio y proyectos de investigación</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bloque 4: Aprendizaje Significativo y Ensayo y Error -->
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1581091012184-1bb58d7c8ee0" alt="Significativo">
+      <div class="texto">
+        <h2>Teoría del Aprendizaje Significativo y Ensayo y Error</h2>
+        <p>David Ausubel propuso el aprendizaje significativo, donde se integran nuevos conocimientos con ideas previas.</p>
+        <p>Por otro lado, Edward Thorndike estudió el aprendizaje por ensayo y error, donde la repetición y corrección permiten adquirir habilidades y resolver problemas.</p>
+      </div>
+    </div>
+
+    <!-- Bloque 5: Observación y Constructivista -->
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1564869735405-bef237979172" alt="Observación">
+      <div class="texto">
+        <h2>Teoría del Aprendizaje por Observación y Constructivista</h2>
+        <p>Albert Bandura destacó la importancia del aprendizaje observacional: se aprende imitando modelos significativos.</p>
+        <p>El enfoque constructivista, basado en Piaget y Vygotsky, plantea que el aprendizaje es activo y se construye a partir de la interacción social y la experiencia directa.</p>
+      </div>
+    </div>
+
+    <!-- Bloque 6: Objetivos de la Psicología del Aprendizaje -->
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1596496055556-3a04e1aa0ef4" alt="Objetivos">
+      <div class="texto">
+        <h2>Objetivos de la Psicología del Aprendizaje</h2>
+        <ul class="lista">
+          <li><strong>Descripción:</strong> identificar y explicar fenómenos de aprendizaje.</li>
+          <li><strong>Explicación:</strong> comprender por qué ocurren ciertos procesos de aprendizaje.</li>
+          <li><strong>Predicción:</strong> anticipar comportamientos y resultados de aprendizaje.</li>
+          <li><strong>Control:</strong> intervenir para optimizar el aprendizaje y la enseñanza.</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- REFLEXIÓN SEMANA 2 -->
+  <section class="reflexion">
+    <h2>Reflexión Semana 2</h2>
+    <p>Durante esta semana comprendí la evolución histórica de la Psicología del Aprendizaje, desde los planteamientos filosóficos hasta las teorías modernas. 
+    Entender cada enfoque me permite apreciar cómo estas teorías influyen en la educación y el desarrollo personal, y cómo pueden aplicarse para mejorar los procesos de enseñanza y aprendizaje en distintos contextos.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Hecho por Cesia Damaris Barrera Díaz</p>
+    <small>Facultad de Ciencias y Humanidades | Asignatura: Psicología del Aprendizaje – Cómputo 1</small>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semana 1 - Psicología del Aprendizaje</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f6fbff; color: #0b2540; }
+    a { text-decoration: none; color: inherit; }
+
+    header { background: linear-gradient(180deg, #06223d, #0a3c5f); padding: 20px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; }
+    .logo img { height: 60px; margin-right: 15px; }
+    .logo h1 { color: white; font-size: 24px; font-weight: 800; }
+    nav ul { display: flex; list-style: none; gap: 16px; }
+    nav a { color: white; font-weight: 600; padding: 8px; }
+    nav a:hover { opacity: 0.8; }
+
+    .hero { background: url('https://images.unsplash.com/photo-1531482615713-2afd69097998') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; position: relative; }
+    .hero::after { content: ""; position: absolute; inset: 0; background: rgba(2,18,34,0.6); }
+    .hero .content { position: relative; z-index: 1; max-width: 800px; margin: auto; }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; opacity: 0.9; }
+
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .bloque { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; margin-bottom: 60px; }
+    .bloque.alt { grid-template-columns: 1fr 1fr; direction: rtl; }
+    .bloque.alt .texto { direction: ltr; }
+    .bloque img { width: 100%; border-radius: 12px; box-shadow: 0 6px 20px rgba(6,30,60,0.08); }
+    .texto h2 { font-size: 2rem; color: #0a3c5f; margin-bottom: 16px; }
+    .texto p { font-size: 1rem; line-height: 1.5; margin-bottom: 10px; }
+    .lista { margin-left: 20px; margin-bottom: 20px; }
+    .lista li { margin-bottom: 8px; }
+
+    /* Reflexión específica */
+    .reflexion { background: #eaf6ff; padding: 40px; border-radius: 12px; text-align: center; margin-top: 40px; }
+    .reflexion h2 { font-size: 2rem; margin-bottom: 16px; color: #0a3c5f; }
+    .reflexion p { font-size: 1rem; line-height: 1.6; }
+
+    footer { background: #042637; color: #cfeaf6; text-align: center; padding: 30px 20px; }
+    footer small { display: block; margin-top: 12px; font-size: 0.9rem; color: #9ed6e9; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="https://talentohumano.ugb.edu.sv/Assets/img/logos/logo_blanco_vertical.png" alt="Logo UGB">
+      <h1>Psicología del Aprendizaje</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="semana2.html">Semana 2</a></li>
+        <li><a href="semana3.html">Semana 3</a></li>
+        <li><a href="semana4.html">Semana 4 y 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="content">
+      <h1>Semana 1: ¿Qué es la Psicología del Aprendizaje?</h1>
+      <p>Exploramos los fundamentos, métodos y tipos de aprendizaje en esta primera semana.</p>
+    </div>
+  </section>
+
+  <!-- BLOQUES DE CONTENIDO -->
+  <section>
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1554774853-b0ef885f0d46" alt="Psicología">
+      <div class="texto">
+        <h2>¿Qué es la Psicología del Aprendizaje?</h2>
+        <p>La Psicología del Aprendizaje es la rama de la psicología que estudia cómo las personas adquieren, retienen y aplican conocimientos.</p>
+        <p>Se enfoca en comprender los procesos cognitivos, emocionales y conductuales implicados en el aprendizaje, así como los factores que pueden favorecer o dificultar la adquisición de habilidades.</p>
+      </div>
+    </div>
+
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Métodos">
+      <div class="texto">
+        <h2>Métodos que utiliza la Psicología</h2>
+        <ul class="lista">
+          <li>Observación directa del comportamiento en distintos contextos.</li>
+          <li>Experimentos controlados en laboratorio para analizar variables específicas.</li>
+          <li>Estudios longitudinales y de caso para comprender cambios a lo largo del tiempo.</li>
+          <li>Pruebas psicométricas y evaluaciones de desempeño para medir el aprendizaje.</li>
+          <li>Investigación aplicada para mejorar técnicas y estrategias de enseñanza.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <img src="https://images.unsplash.com/photo-1581091012184-1bb58d7c8ee0" alt="Aprendizaje">
+      <div class="texto">
+        <h2>¿Qué es el Aprendizaje?</h2>
+        <p>El aprendizaje es un proceso mediante el cual se adquieren conocimientos, habilidades, actitudes o valores a través de la experiencia, la instrucción o la práctica.</p>
+        <p>Implica cambios relativamente permanentes en la conducta o en la capacidad de actuar, resultado de la interacción con el entorno y la experiencia acumulada.</p>
+      </div>
+    </div>
+
+    <div class="bloque alt">
+      <img src="https://images.unsplash.com/photo-1581093454983-3e426eb1f885" alt="Tipos de aprendizaje">
+      <div class="texto">
+        <h2>Tipos de Aprendizaje</h2>
+        <ul class="lista">
+          <li>Aprendizaje por ensayo y error: aprender mediante la práctica y corrección de errores.</li>
+          <li>Aprendizaje significativo: relacionar nueva información con conocimientos previos.</li>
+          <li>Aprendizaje por observación: aprender imitando modelos o conductas de otros.</li>
+          <li>Aprendizaje constructivista: construir el conocimiento a partir de la experiencia.</li>
+          <li>Aprendizaje por descubrimiento: explorar y encontrar soluciones por cuenta propia.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFLEXIÓN SEMANA 1 -->
+  <section class="reflexion">
+    <h2>Reflexión Semana 1</h2>
+    <p>En esta primera semana comprendí la importancia de la Psicología del Aprendizaje para entender cómo las personas adquieren conocimientos y habilidades. 
+    Aprender sobre los distintos métodos y tipos de aprendizaje me permitió reflexionar sobre cómo aplicar estas estrategias en mi propio proceso de aprendizaje y en la enseñanza de otros. 
+    Esta base inicial será fundamental para explorar teorías y precursores en las semanas siguientes.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 – Hecho por Cesia Damaris Barrera Díaz</p>
+    <small>Facultad de Ciencias y Humanidades | Asignatura: Psicología del Aprendizaje – Cómputo 1</small>
+  </footer>
+
+</body>
+</html>
